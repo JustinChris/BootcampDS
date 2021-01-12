@@ -90,19 +90,7 @@ int min() {
 }
 
 int main() {
-    int n;
-    int nilai;
-    // printf("Masukan jumlah Linked List:\n");
-    // scanf("%d",&n);
-    // for (int i = 0; i < n;i++) {
-    //     scanf("%d",&nilai);
-    //     if (i = 0){
-    //         pushHead(nilai);
-    //     }else {
-    //         pushTail(nilai);
-    //     }
-        
-    // }
+
     pushHead(54);
     pushTail(97);
     pushTail(51);
@@ -113,7 +101,6 @@ int main() {
     printf("nilai max: %d\n",max());
     printf("nilai min: %d\n",min());
     printf("Range: %d\n",max() - min());
-    
 
     return 0;
 }
