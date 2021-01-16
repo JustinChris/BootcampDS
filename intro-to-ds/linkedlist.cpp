@@ -218,10 +218,10 @@ int main() {
   pushTail("whisper0", 97); // 95 (head) -> 97 (tail) -> NULL
   pushHead("pai", 100); // 100 (head) -> 95 -> 97 (tail) -> NULL
   pushHead("romario", 98); // 98 (head) -> 100 -> 95 -> 97 (tail) -> NULL
-  popHead(); // 100 (head) -> 95 -> 97 (tail) -> NULL
-  popTail(); // 100 (head) -> 95 (tail) -> NULL
-  popTail(); // 100 (head, tail) -> NULL
-  popHead(); // NULL
+  //popHead(); // 100 (head) -> 95 -> 97 (tail) -> NULL
+  //popTail(); // 100 (head) -> 95 (tail) -> NULL
+  //popTail(); // 100 (head, tail) -> NULL
+  //popHead(); // NULL
   printLinkedList();
 
   return 0;
