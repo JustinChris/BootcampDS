@@ -5,10 +5,21 @@
 struct Node {
     int index;
     int gp;
+    int level;
     Node *left, *right;
 };
 
+int max (int a, int b) {
+    return (a > b) ? a : b;
+}
 
+int getHeight(Node *root) {
+    return (root) ? root->level : 0;
+}
+
+int computeNewHeight (Node *root) {
+    return max(getHeight(root->left),getHeight(root->right)) + 1;
+}
 
 Node *createNode (int index, int gp) {
     Node *temp = (Node*)malloc(sizeof(Node));
